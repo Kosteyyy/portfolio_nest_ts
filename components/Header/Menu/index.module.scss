@@ -1,0 +1,63 @@
+@import "../../../styles/const.scss";
+
+.menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: white;
+  padding: 2rem 0 3rem 0;
+  box-shadow: 0 8px 4px -4px #eee;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+  &.visibleMenu {
+    transform: scale(1, 1);
+    li {
+      opacity: 1;
+      transition: opacity 150ms linear 0.2s;
+    }
+    transition: transform 0.3s ease-in-out;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    li {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.25rem;
+      opacity: 0;
+      transition: opacity 200ms linear;
+      padding: 1rem;
+      margin: 0 2rem;
+      border-bottom: 1px dashed #aaa;
+      &:hover,
+      &:focus {
+        color: $Button;
+      }
+    }
+  }
+  @media (min-width: 800px) {
+    position: static;
+    transform: unset;
+    box-shadow: none;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    ul {
+      display: flex;
+      gap: 2rem;
+
+      li {
+        opacity: 1;
+        border: none;
+        padding: 0;
+        margin: 0;
+        // color: red;
+      }
+    }
+  }
+}
