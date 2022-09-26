@@ -10,7 +10,8 @@
   padding: 0;
   box-shadow: 0 2px 4px 0px rgb(167, 166, 166, 0.2);
   @media (min-width: 800px) {
-    padding: 0 3rem;
+    padding: 0 2rem;
+    background: #222;
   }
   //   border: 1px solid black;
   .header {
@@ -24,6 +25,9 @@
     }
     @media (min-width: 800px) {
       justify-content: space-between;
+      .logo a {
+        color: white;
+      }
     }
     .toggleMenu {
       position: absolute;

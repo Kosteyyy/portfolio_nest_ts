@@ -13,16 +13,24 @@ const Menu: React.FC<IProps> = ({ visible }) => {
     <nav className={menuClassName}>
       <ul>
         <li>
-          <Link href={"/"}>Главная</Link>
+          <Link href={"/"}>
+            <a data-text="Главная">Главная</a>
+          </Link>
         </li>
         <li>
-          <Link href={"/"}>Обо мне</Link>
+          <Link href={"/"}>
+            <a data-text="Обо мне">Обо мне</a>
+          </Link>
         </li>
         <li>
-          <Link href={"/"}>Навыки</Link>
+          <Link href={"/"}>
+            <a data-text="Навыки">Навыки</a>
+          </Link>
         </li>
         <li>
-          <Link href={"/"}>Проекты</Link>
+          <Link href={"/"}>
+            <a data-text="Проекты">Проекты</a>
+          </Link>
         </li>
       </ul>
     </nav>
