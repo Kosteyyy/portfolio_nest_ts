@@ -18,7 +18,7 @@ const Menu: React.FC<IProps> = ({ visible }) => {
           </Link>
         </li>
         <li>
-          <Link href={"/"}>
+          <Link href={"/about"}>
             <a data-text="Обо мне">Обо мне</a>
           </Link>
         </li>
@@ -30,6 +30,11 @@ const Menu: React.FC<IProps> = ({ visible }) => {
         <li>
           <Link href={"/"}>
             <a data-text="Проекты">Проекты</a>
+          </Link>
+        </li>
+        <li>
+          <Link href={"/"}>
+            <a data-text="Контакты">Контакты</a>
           </Link>
         </li>
       </ul>

@@ -11,7 +11,17 @@
   box-shadow: 0 2px 4px 0px rgb(167, 166, 166, 0.2);
   @media (min-width: 800px) {
     padding: 0 2rem;
-    background: #222;
+    background: rgb(22, 19, 66);
+    background: linear-gradient(
+      90deg,
+      rgba(22, 19, 66, 1) 0%,
+      rgba(8, 8, 85, 1) 35%,
+      rgba(42, 59, 106, 1) 100%
+    );
+
+    :global(.container) {
+      max-width: 1900px;
+    }
   }
   //   border: 1px solid black;
   .header {
@@ -22,11 +32,35 @@
     align-items: center;
     .logo {
       z-index: 20;
+
+      svg {
+        fill: $Text;
+        width: 150px;
+        transform: translateY(8px);
+        :global(#logo-secondary) {
+          display: none;
+        }
+      }
+      // animation: logoAnimate 5s ease 1s forwards;
     }
     @media (min-width: 800px) {
       justify-content: space-between;
       .logo a {
         color: white;
+        svg {
+          fill: white;
+          width: 250px;
+          :global(#logo-secondary) {
+            display: unset;
+          }
+          transition: transform 0.3s ease;
+        }
+      }
+      .logo a:hover {
+        svg {
+          transform: translateY(-3px);
+          transition: transform 0.3s ease;
+        }
       }
     }
     .toggleMenu {
@@ -76,5 +110,16 @@
       transition: all 0.3s ease;
       bottom: 10px;
     }
+  }
+}
+@keyframes logoAnimate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

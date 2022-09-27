@@ -8,13 +8,19 @@ const Home: NextPage = () => {
     <div className={styles.wrapper}>
       <div className={styles.hero}>
         <div className="container">
-          <h1>Hero div</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perferendis nulla voluptate aspernatur voluptatem velit iste fugiat
-            saepe dolore. Deleniti, explicabo tempore! Provident in consectetur
-            nostrum sed. Ea facilis quisquam pariatur.
-          </p>
+          <div className={styles.content}>
+            <h1>Сделаем вместе!</h1>
+            <p className={styles.hello}>
+              Привет, я <span className={styles.accent}>Константин</span>
+              <br />
+              Frontend разработчик
+            </p>
+            <p>
+              Я - фронтенд разработчик, специализирующийся на создании
+              web-приложений и сайтов. В основном - фронтенд, но и немного
+              своего бэкэнда
+            </p>
+          </div>
         </div>
       </div>
       <div className={styles.test}>
