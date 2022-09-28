@@ -3,63 +3,7 @@
 .wrapper {
   background: white;
 }
-.hero {
-  background-color: $Bg-secondary;
-  height: 100vh;
-  margin: 0;
-  padding: 60px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-  @media (min-width: 800px) {
-    padding: 120px 0;
-  }
 
-  .content {
-    text-align: center;
-    max-width: 800px;
-    h1 {
-      text-transform: uppercase;
-      font-weight: normal;
-      font-size: 1.25rem;
-    }
-    p {
-      font-size: 1.125rem;
-      line-height: 1.5;
-    }
-    p.hello {
-      font-size: 2rem;
-      line-height: 1.25;
-      font-weight: 700;
-      .accent {
-        color: $Button;
-      }
-    }
-    @media (min-width: 800px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 1.5rem;
-        line-height: 1.5;
-      }
-      p.hello {
-        font-size: 3.5rem;
-        line-height: 1.25;
-        font-weight: 700;
-      }
-    }
-  }
-  // border: 1px solid red;
-  h1 {
-    // padding-top: 0;
-    // margin-top: 0;
-    // background: peru;
-    // display: inline-block;
-  }
-}
 .test {
   background: yellow;
   display: block;

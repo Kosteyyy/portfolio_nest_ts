@@ -40,12 +40,17 @@ h4 {
     padding: 0;
   }
 }
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+.section-wrapper {
+  h2 {
+    text-transform: uppercase;
+    color: $MainColor;
   }
-  body {
-    color: white;
-    background: black;
+  h3 {
+    font-size: 2rem;
   }
-} */
+}
+
+.section--accent {
+  background: $Bg-secondary;
+}

@@ -18,22 +18,22 @@ const Menu: React.FC<IProps> = ({ visible }) => {
           </Link>
         </li>
         <li>
-          <Link href={"/about"}>
+          <Link href={"/#home-about"}>
             <a data-text="Обо мне">Обо мне</a>
           </Link>
         </li>
         <li>
-          <Link href={"/"}>
+          <Link href={"/#home-skills"}>
             <a data-text="Навыки">Навыки</a>
           </Link>
         </li>
         <li>
-          <Link href={"/"}>
+          <Link href={"/#home-projects"}>
             <a data-text="Проекты">Проекты</a>
           </Link>
         </li>
         <li>
-          <Link href={"/"}>
+          <Link href={"/#home-contact"}>
             <a data-text="Контакты">Контакты</a>
           </Link>
         </li>
