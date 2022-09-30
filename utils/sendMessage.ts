@@ -3,9 +3,10 @@ export const sendMessage = async (message: string) => {
   try {
     if (process.env.NEXT_PUBLIC_BOT_URL) {
       const result = await fetch(
-        "NEXT ADDRESS" /*  && process.env.NEXT_PUBLIC_BOT_URL */,
+        /* "NEXT ADDRESS"  &&  */ process.env.NEXT_PUBLIC_BOT_URL,
         {
           method: "POST",
+          // mode: "no-cors", - если это включить, приходит респонс, но без статуса и соощения не проходят.
           headers: {
             "Content-Type": "application/json",
           },
@@ -17,8 +18,9 @@ export const sendMessage = async (message: string) => {
           }),
         }
       );
-      // const result = await resultJSON.json();
-      console.log("RESULT FROM BOT: ", result.status);
+      // const res_final = await result.json();
+      const res = await result.text();
+      console.log("RESULT FROM BOT: ", result, res);
     }
     // throw "ERROR";
   } catch (error: any) {

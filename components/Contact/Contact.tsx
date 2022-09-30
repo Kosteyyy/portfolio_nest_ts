@@ -70,12 +70,12 @@ const Contact = () => {
             onSubmit={handleSubmit}
           >
             <div className={styles.inputBox}>
-              <input type="text" name="Name" value={name} required />
+              <input type="text" name="name" /*  value={name}  */ required />
               <span>Имя</span>
               <i></i>
             </div>
             <div className={styles.inputBox}>
-              <input type="text" name="phone" value={phone} required />
+              <input type="text" name="phone"/*  value={phone} */ required />
               <span>Телефон или E-mail</span>
               <i></i>
             </div>
@@ -85,12 +85,12 @@ const Contact = () => {
               <i></i>
             </div> */}
             <div className={styles.inputBox}>
-              <input type="text" name="subject" value={subject} required />
+              <input type="text" name="subject"/*  value={subject}  */required />
               <span>Тема</span>
               <i></i>
             </div>
             <div className={styles.textBox}>
-              <textarea required value={message} name="message" />
+              <textarea required /* value={message} */ name="message" />
               <span>Сообщение</span>
               <i></i>
             </div>
