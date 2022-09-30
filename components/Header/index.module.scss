@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-shadow: 0 2px 4px 0px rgb(167, 166, 166, 0.2);
+  z-index: 20;
   @media (min-width: 800px) {
     padding: 0 2rem;
     background: rgb(22, 19, 66);

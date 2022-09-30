@@ -1,0 +1,62 @@
+@import "/styles/const.scss";
+
+.card {
+  position: relative;
+  // max-width: 500px;
+  // min-width: 400px;
+  // width: 100%;
+  height: 300px;
+  // max-height: 300px;
+  margin: 0 0 1rem 0;
+  // width: 100%;
+
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 0 5px 0 grey;
+
+    // aspect-ratio: 2/3;
+  }
+  .face.face1 {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    // background-image: url("/assets/projects/tracker-01.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: translateY(0) rotateX(0);
+    h1 {
+      color: white;
+      background-color: $MainColor;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+  &:hover .face.face1 {
+    transform: translateY(-100%) rotateX(90deg);
+    // background: #ff0057;
+  }
+  .face.face2 {
+    z-index: 1;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transform-origin: top;
+    transform: translateY(100%) rotateX(90deg);
+    transition: 0.5s;
+  }
+  &:hover .face.face2 {
+    transform: translateY(0) rotateX(0deg);
+  }
+}

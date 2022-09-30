@@ -5,36 +5,47 @@ import styles from "./index.module.scss";
 
 interface IProps {
   visible: boolean;
+  onClose: () => void;
 }
 
-const Menu: React.FC<IProps> = ({ visible }) => {
+const Menu: React.FC<IProps> = ({ visible, onClose }) => {
   let menuClassName = classNames(styles.menu, visible && styles.visibleMenu);
   return (
     <nav className={menuClassName}>
       <ul>
         <li>
           <Link href={"/"}>
-            <a data-text="Главная">Главная</a>
+            <a onClick={onClose} data-text="Главная">
+              Главная
+            </a>
           </Link>
         </li>
         <li>
           <Link href={"/#home-about"}>
-            <a data-text="Обо мне">Обо мне</a>
+            <a onClick={onClose} data-text="Обо мне">
+              Обо мне
+            </a>
           </Link>
         </li>
         <li>
           <Link href={"/#home-skills"}>
-            <a data-text="Навыки">Навыки</a>
+            <a onClick={onClose} data-text="Навыки">
+              Навыки
+            </a>
           </Link>
         </li>
         <li>
           <Link href={"/#home-projects"}>
-            <a data-text="Проекты">Проекты</a>
+            <a onClick={onClose} data-text="Проекты">
+              Проекты
+            </a>
           </Link>
         </li>
         <li>
           <Link href={"/#home-contact"}>
-            <a data-text="Контакты">Контакты</a>
+            <a onClick={onClose} data-text="Контакты">
+              Контакты
+            </a>
           </Link>
         </li>
       </ul>

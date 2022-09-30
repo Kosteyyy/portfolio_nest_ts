@@ -1,0 +1,12 @@
+.projects {
+  // background: peru;
+  @media (min-width: 576px) {
+    // display: flex;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
+    // gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2rem;
+  }
+}

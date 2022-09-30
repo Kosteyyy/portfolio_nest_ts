@@ -1,0 +1,15 @@
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.skills {
+  @media (min-width: 30em) {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2em;
+  }
+}

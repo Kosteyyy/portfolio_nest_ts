@@ -162,7 +162,7 @@ const Header = () => {
               </a>
             </Link>
           </div>
-          <Menu visible={isMenuVisible} />
+          <Menu visible={isMenuVisible} onClose={toggleMenu} />
           <div className={toggleBtnClassName} onClick={toggleMenu}>
             <span></span>
           </div>
