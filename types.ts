@@ -10,3 +10,11 @@ export type TProject = {
   img?: string;
   link: string;
 };
+
+export type TFormData = {
+  name: string;
+  phone: string;
+  // company: string;
+  subject: string;
+  message: string;
+};
