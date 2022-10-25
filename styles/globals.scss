@@ -31,6 +31,7 @@ h2,
 h3,
 h4 {
   color: $Text;
+  font-family: "Oswald", sans-serif;
 }
 .container {
   width: 100%;
@@ -57,4 +58,22 @@ h4 {
 }
 .section--accent {
   background: $Bg-secondary;
+}
+
+.project-wrapper {
+  margin-bottom: 4rem;
+  section {
+    margin-top: 3rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }

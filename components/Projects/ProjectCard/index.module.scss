@@ -40,10 +40,7 @@
       border-radius: 0.5rem;
     }
   }
-  &:hover .face.face1 {
-    transform: translateY(-100%) rotateX(90deg);
-    // background: #ff0057;
-  }
+
   .face.face2 {
     z-index: 1;
     background: white;
@@ -55,8 +52,63 @@
     transform-origin: top;
     transform: translateY(100%) rotateX(90deg);
     transition: 0.5s;
+    a {
+      color: white;
+      background: $MainColor;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: 0.3s;
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
   }
   &:hover .face.face2 {
     transform: translateY(0) rotateX(0deg);
+  }
+  &:hover .face.face1 {
+    transform: translateY(-100%) rotateX(90deg);
+    // background: #ff0057;
+  }
+  @media (hover: hover) {
+    .face.face1 {
+      .info {
+        display: none;
+      }
+    }
+  }
+  @media (hover: none) {
+    .face.face1 {
+      background-color: rgba(0, 0, 0, 0.7);
+      // background: linear-gradient(
+      //   to bottom,
+      //   rgba(0, 0, 0, 0.5) 0%,
+      //   rgba(0, 0, 0, 1) 100%
+      // );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        background: transparent;
+      }
+      .info {
+        display: unset;
+        text-align: center;
+        p {
+          color: white;
+        }
+
+        a {
+          color: white;
+          background: $MainColor;
+          padding: 0.5rem 1rem;
+          border-radius: 0.5rem;
+          transition: 0.3s;
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
   }
 }

@@ -1,11 +1,14 @@
 @import "/styles/const.scss";
 .formContainer {
   position: relative;
-  width: 50%;
+  min-width: 320px;
   height: 550px;
   background: #ddd;
   border-radius: 8px;
   overflow: hidden;
+  @media (min-width: 800px) {
+    width: 50%;
+  }
 }
 .formContainer::before {
   content: "";
@@ -73,6 +76,9 @@
       letter-spacing: 0.05em;
       z-index: 10;
     }
+    textarea {
+      margin-top: 20px;
+    }
     span {
       position: absolute;
       left: 0;
@@ -110,6 +116,7 @@
     }
     textarea:valid ~ i,
     textarea:focus ~ i {
+      bottom: -10px;
       height: 80px;
       background-color: lightgray;
     }

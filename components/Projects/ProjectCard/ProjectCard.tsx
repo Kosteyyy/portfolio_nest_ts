@@ -17,6 +17,10 @@ const ProjectCard: React.FC<IProps> = ({ project }) => {
       >
         {/* <Image src={`/assets/projects/${project.img}`} layout="fill"></Image> */}
         <h1>{project.name}</h1>
+        <div className={styles.info}>
+          <p>{project.stack}</p>
+          <Link href={`/${project.link}`}>Перейти</Link>
+        </div>
       </div>
       <div className={`${styles.face} ${styles.face2}`}>
         <h2>{project.name}</h2>
