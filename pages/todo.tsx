@@ -36,11 +36,16 @@ const Todo = () => {
           </Link> */}{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/Kosteyyy/todo-fullstack-grahpql-mongodb"
             >
               Исходный код
             </a>
-            <a target="_blank" href="https://todo-fullstack.onrender.com/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://todo-fullstack.onrender.com/"
+            >
               Перейти
             </a>
             <div className={styles.message}>

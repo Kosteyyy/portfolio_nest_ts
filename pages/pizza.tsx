@@ -32,11 +32,16 @@ const Pizza = () => {
           </Link> */}{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/Kosteyyy/pizza-api-react"
             >
               Исходный код
             </a>
-            <a target="_blank" href="https://pizza-api-react.vercel.app/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://pizza-api-react.vercel.app/"
+            >
               Перейти
             </a>
           </div>

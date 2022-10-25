@@ -31,7 +31,11 @@ const Tracker = () => {
             {/* <Link href="#">
             <a>Исходный код</a>
           </Link> */}
-            <a target="_blank" href="http://averkiev-tracker.surge.sh">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="http://averkiev-tracker.surge.sh"
+            >
               Перейти
             </a>
           </div>
