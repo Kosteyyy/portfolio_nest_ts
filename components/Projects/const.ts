@@ -19,6 +19,7 @@ export const PROJECTS: TProject[] = [
     name: "Интернет-магазин",
     type: "Fullstack",
     stack: "React (MERN)",
+    img: "ecommerce-03.jpg",
     link: "eshop",
   },
   {
@@ -32,6 +33,7 @@ export const PROJECTS: TProject[] = [
     name: "Strava",
     type: "Fullstack",
     stack: "React + Node.js",
+    img: "strava-01.jpg",
     link: "strava",
   },
 ];
