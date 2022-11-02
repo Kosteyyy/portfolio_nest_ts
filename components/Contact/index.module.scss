@@ -8,6 +8,7 @@
   overflow: hidden;
   @media (min-width: 800px) {
     width: 50%;
+    margin-left: 0;
   }
 }
 .formContainer::before {
@@ -133,6 +134,45 @@
     cursor: pointer;
     &:hover {
       background-color: rgba($MainColor, 0.8);
+    }
+  }
+}
+.contactBlock {
+  .contactContainer {
+    h2 {
+      color: rgba(white, 0.8);
+      font-size: 1.5rem;
+    }
+    p {
+      line-height: 1.5em;
+    }
+    .phone,
+    .email {
+      margin-left: 10px;
+      font-size: 1.25rem;
+    }
+    color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-image: url("/assets/gridlines.png"), url("/assets/contours.png"),
+      url("/assets/header_bg.jpg");
+    background-position: 0 0;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, fill;
+    padding: 3rem;
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 800px) {
+    display: flex;
+    // background: peru;
+    .contactContainer {
+      width: 50%;
+      margin: 50px 0 50px 50px;
+
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
   }
 }
