@@ -26,7 +26,7 @@ const Header = () => {
       <div className="container">
         <div className={styles.header}>
           <div className={styles.logo}>
-            <Link href="/">
+            <Link href="/#home-page">
               <a>
                 <svg
                   id="logo-svg"

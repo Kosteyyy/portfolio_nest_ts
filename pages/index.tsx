@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Main from "../components/Main/Main";
@@ -9,7 +10,7 @@ import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className="home_page">
       <Head>
         <title>ReactJS разработчик Аверкиев</title>
         <meta
@@ -18,14 +19,14 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.wrapper}>
+      <div id="home-page" className={styles.wrapper}>
         <Main />
         <About />
         <Skills />
         <Projects />
         <Contact />
       </div>
-    </>
+    </div>
   );
 };
 

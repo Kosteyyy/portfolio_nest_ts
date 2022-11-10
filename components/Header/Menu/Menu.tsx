@@ -14,7 +14,7 @@ const Menu: React.FC<IProps> = ({ visible, onClose }) => {
     <nav className={menuClassName}>
       <ul>
         <li>
-          <Link href={"/"}>
+          <Link href={"/#home-page"}>
             <a onClick={onClose} data-text="Главная">
               Главная
             </a>
